@@ -1,2 +1,9 @@
-# FaculdadeBigData
-Trabalho de extensão referênte a disciplina de BigData 5° periódo de Engenharia de software
+# _"Engenharia de software - Trabalho de Extensão.."_
+<h4>Criado por Edmar Chagas Pires, aluno de Engenharia de software, empregado como Eletricista no ano de 2020 até presente momento 2024. Não conseguir passar em nenhuma entrevista para desenvolvedor por enquanto.</h4>
+<h4>Neste projeto utilizei a linguagem de programação python para mapear quais locais ficam sem energia com maior frequência através da analise de um log de eventos gerado por disjuntores automatizados das marcas NojaPower, Tavrida, Cooper, AR1000 e Westinghouse que enviam dados para o programa Spectrum Power 5 da Siemens que é encarregado de gerar o log de eventos dos disjuntores como um arquivo .CSV o que não trás uma visualização intuitiva visto que apresenta apenas texto, a solução encontrada foi utilizar o Python para gerar uma interface gráfica amigavel ao usuário.</h4>
+<h4 align="center">RESULTADO ALCANÇADO:</h4>
+<img src="https://raw.githubusercontent.com/edmarpires9/FaculdadeBigData/main/Imagens/resultado_obitido.png" alt="Ops! :x alguma coisa impediu de carregar a imagem de nome resultado obitido, provavelmente 404.">
+
+<h4>Caso queira, testar ou modificar este programa sinta livre para tal. Este aplicativo não contem licensa ou patentes. Lembre-se que além do código disponibilizado neste repositório você vai precisar ter instalado em sua máquina o Python. Faça o download da versão mais recente <a href="https://www.python.org/downloads/" target="_blank">clicando aqui.</a></h4>
+<h4>Também tenha em mente que você precisará realizar a instalação das bibliotecas panda e matplotlib.</h4>
+<h4>No exemplo hipotetico acima, o programa que desenvolvi identificou que está faltando energia elétrica com frequência para as cidades Cameli, Marinópolis, Tuitinga, Muriaé, Antonio Prado de Minas, São joão da Sapucaia, Monte Celeste, Ubá, Rio Pomba na região CFET, Ervalia na região SFC. Através de alarmes que os disjuntores automatizados nos enviaram. Ou seja sabemos que devemos atuar na manutenção de tais redes para evitar insatisfação de nossos amados clientes.</h4>
