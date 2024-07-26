@@ -29,3 +29,16 @@ def gerar_grafico(contagem_de_nomes, top_n=10):
     plt.xticks(rotation = 45)
     plt.tight_layout()
     plt.show()
+
+#Caminho da tabela do Excel a mesma deve estar no formato .CSV ou XLSX
+caminho_do_arquivo = 'db.xlsx'
+nome_da_coluna = 'Descrição'
+
+#Chama a função que realiza leitura da tabela do Excel
+tabela = ler_tabela(caminho_do_arquivo)
+
+#Chama a função que conta quantas vezes faltou energia em cada local
+contagem_de_nomes = contar_nomes(tabela, nome_da_coluna)
+
+#Gera o gráfico contendo apenas os 10x locais onde faltou energia com maior frequência para que seja efetivado uma manutenção na rede de distribuição de energia.
+gerar_grafico(contagem_de_nomes, top_n=10)
