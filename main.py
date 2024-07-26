@@ -13,4 +13,8 @@ def ler_tabela(caminho_do_arquivo):
         raise ValueError('Erro de leitura o arquivo selecionado não corresponde aos formatos suportados .CSV ou .XLSX.')
     return tabela
 
+#Função para contar os nomes de onde faltou energia
+def contar_nomes(tabela, nome_da_coluna):
+    contagem_de_nomes = tabela(nome_da_coluna).value_counts()
+    return contagem_de_nomes
 
