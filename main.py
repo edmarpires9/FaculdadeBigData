@@ -14,8 +14,8 @@ def ler_tabela(caminho_do_arquivo):
     return tabela
 
 #Função para contar os nomes de onde faltou energia
-def contar_nomes(tabela, nome_da_coluna):
-    contagem_de_nomes = tabela(nome_da_coluna).value_counts()
+def contar_nomes(tabela,nome_da_coluna):
+    contagem_de_nomes = tabela[nome_da_coluna].value_counts()
     return contagem_de_nomes
 
 #Função para gerar o gráfico
@@ -25,7 +25,7 @@ def gerar_grafico(contagem_de_nomes, top_n=10):
     top_nomes.plot(kind='bar')
     plt.title(f'Nome dos locais onde o fornecimento de energia é interrompido com maior frequência.')
     plt.xlabel('Nome do local.')
-    plt.ylim('Quantidade de interrupção.')
+    plt.ylabel('Quantidade de interrupção.')
     plt.xticks(rotation = 45)
     plt.tight_layout()
     plt.show()
